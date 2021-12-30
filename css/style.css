@@ -1,0 +1,181 @@
+.cell {
+  width: 50px;
+  height: 50px;
+  line-height: 0;
+  border: 1px solid black;
+  transition: background-color 0.25s;
+}
+
+.cell.small {
+  width: 10px;
+  height: 10px;
+}
+
+.entity {
+  margin: 3px 0 0 12px;
+  font-size: 40px;
+  transition: all 0.25s;
+}
+
+.entity.small {
+  margin: 0;
+  font-size: 10px;
+}
+
+.entity.fade {
+  opacity: 0;
+}
+
+.percept-container {
+  float: right;
+}
+
+.entity.percept {
+  margin-top: 5px;
+  margin-right: 2px;
+}
+
+.entity.anchor {
+  margin-left: 3px;
+}
+
+.entity.player {
+  transition: opacity 2s ease-in-out;
+}
+
+.entity.arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 1s linear, left 1s linear;
+  font-size: 26px;
+  color: red;
+}
+
+#graph {
+  min-height: 200px;
+}
+
+#graph .ml-1 {
+  margin-left: 20px !important;
+}
+
+#graph .ml-2 {
+  margin-left: 40px !important;
+}
+
+#graph .ml-3 {
+  margin-left: 60px !important;
+}
+
+#graph .ml-4 {
+  margin-left: 80px !important;
+}
+
+#graph .ml-5 {
+  margin-left: 100px !important;
+}
+
+.gamePlayOptions span {
+  margin-right: 12px;
+}
+
+.gamePlayOptions input[type='number'] {
+  width: 50px;
+}
+
+.gamePlayOptions .no-gutters>.col, .no-gutters>[class*=col-] {
+  padding-right: 10px;
+}
+
+.btn.disabled:focus,.btn.disabed:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+fieldset.instructions {
+  border: 1px groove #ddd !important;
+  padding: 0 1.4em 1.4em 1.4em !important;
+  margin: 0 0 1.5em 0 !important;
+  font-size: 14px;
+  -webkit-box-shadow:  0px 0px 0px 0px #000;
+          box-shadow:  0px 0px 0px 0px #000;
+}
+
+.instructions legend {
+  color: slateblue;
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+  text-align: left !important;
+  width:auto;
+  padding:0 10px;
+  border-bottom:none;
+}
+
+.instructions .col.percept {
+  color: slategray;
+  font-size: 13px;
+  margin-top: 4px;
+  margin-left: 5px;
+}
+
+#knowledge {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  color: silver;
+  margin: 5px 0 5px 0;
+}
+
+#knowledge span {
+  padding: 0;
+  margin: 0;
+}
+
+#knowledgebase {
+  margin-top: 5px;
+}
+
+.panel-heading {
+  color: blue;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.panel-heading .fa-chevron:after {
+  content: "\f078";
+}
+
+.panel-heading.collapsed .fa-chevron:after {
+  content: "\f054";
+}
+
+footer {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 3px;
+}
+
+.knowledge {
+  font-family: Courier New;
+  font-size: 12px;
+}
+
+.knowledge .room {
+  border-right: 1px solid gainsboro;
+}
+
+.knowledge .room.active {
+  font-weight: bold;
+}
+
+.knowledge .value {
+  display: inline-block;
+  width: 22px;
+}
+
+.knowledge .value.low {
+  opacity: 0.8;
+}
+
+.knowledge .value.high {
+  font-weight: bold;
+}
